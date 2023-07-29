@@ -29,12 +29,12 @@ HomePage.getLayout = function getLayout(page) {
 
 
 export async function getStaticProps() {
-  // Fetch data from your API or other data source
+  
   const res = await fetch('https://pc-builder-server-nu.vercel.app/product');
   const data = await res.json();
   console.log(data)
 
-  // Pass the fetched data as props to the page component
+ 
   return {
     props: {
       product: data,

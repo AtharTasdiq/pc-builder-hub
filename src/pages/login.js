@@ -65,7 +65,7 @@ const LoginPage = () => {
                 icon={<GoogleOutlined />}
                 onClick={() =>
                   signIn("google", {
-                    callbackUrl: "http://localhost:3000/",
+                    callbackUrl: "https://pc-builder-app.vercel.app",
                   })
                 }
               >
@@ -76,7 +76,7 @@ const LoginPage = () => {
                 icon={<GithubOutlined />}
                 onClick={() =>
                   signIn("github", {
-                    callbackUrl: "http://localhost:3000/",
+                    callbackUrl: "https://pc-builder-app.vercel.app",
                   })
                 }
               >

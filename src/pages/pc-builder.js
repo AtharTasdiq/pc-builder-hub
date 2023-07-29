@@ -175,11 +175,11 @@ const PcBuilder = () => {
             <Button
         style={{
           margin: "50px 0",
-          // You can add more custom styles here as needed
+         
         }}
         onClick={handleCompleteBuild}
         disabled={totalComponentsAdded <= 5}
-        size="large" // Set the size to "large" to make the button larger
+        size="large" 
       >
         Complete Build
       </Button>

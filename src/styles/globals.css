@@ -8,3 +8,16 @@
   font-family: 'Poppins', sans-serif;
  
 }
+
+@media (max-width: 700px) {
+  
+  .flex-change{
+    flex-direction: column;
+  }
+  .button-space{
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+
+}

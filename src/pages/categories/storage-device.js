@@ -46,12 +46,14 @@ const StorageDevice = ({ product }) => {
           md: 24,
           lg: 32,
         }}
-         justify="center">
+         //justify="center"
+         style={{padding:"0 50px"}}
+         >
         {cpus.map((pd) => (
           <Col key={pd._id} xs={24} sm={24} md={12} lg={8}>
             <Card
               hoverable
-              style={{ width: "100%", borderRadius: "12px" }}
+              style={{ width: "100%", borderRadius: "12px", marginBottom:"30px" }}
               cover={
                 <img src={pd?.image} style={imageStyle} alt="product-image" />
               }
@@ -81,13 +83,14 @@ const StorageDevice = ({ product }) => {
                 </Text>
                 <Text type="secondary">Price: ${pd?.price}</Text>
               </div>
-              <div style={{ display: "flex", justifyContent: "space-around" }}>
+              <div className="flex-change" style={{ display: "flex", justifyContent: "space-around" }}>
                 <Link href={`/categories/product/${pd?._id}`}>
-                  <Button type="primary" icon={<ArrowRightOutlined />}>
+                  <Button className="button-space" type="primary" icon={<ArrowRightOutlined />}>
                     View More Details
                   </Button>
                 </Link>
                 <Button
+                className="button-space"
                   type="primary"
                   onClick={() => handleAddToBuilder(pd)}
                   icon={<PlusOutlined />}
@@ -113,12 +116,11 @@ StorageDevice.getLayout = function getLayout(page) {
 
 
 export async function getStaticProps() {
-    // Fetch data from your API or other data source
+   
     const res = await fetch('https://pc-builder-server-nu.vercel.app/product');
     const data = await res.json();
     //console.log(data)
   
-    // Pass the fetched data as props to the page component
     return {
       props: {
         product: data,

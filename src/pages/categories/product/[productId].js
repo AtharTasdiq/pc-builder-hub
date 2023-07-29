@@ -39,19 +39,11 @@ const ProductDetailPage = ({ product }) => (
       <Title level={2}>{product?.productName}</Title>
       <div style={{ display: "flex", alignItems: "center" }}>
         <UserOutlined style={{ marginRight: 8 }} />
-        <Text type="secondary">{product?.category}</Text>
+        <Text>{product?.category}</Text>
       </div>
       <div style={{ display: "flex", alignItems: "center" }}>
         <ProfileOutlined style={{ marginRight: 8 }} />
         <Text>{product?.status}</Text>
-      </div>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <CalendarOutlined style={{ marginRight: 8 }} />
-        <Text type="secondary">Release Date: {product?.release_date}</Text>
-      </div>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <CommentOutlined style={{ marginRight: 8 }} />
-        <Text type="secondary">Comments: {product?.comment_count}</Text>
       </div>
       <Divider />
       <div>
