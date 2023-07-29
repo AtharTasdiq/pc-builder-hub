@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { useRouter } from "next/router";
 import { addComponent } from "@/redux/sdReducer";
 import RootLayout from "@/components/Layout/RootLayout";
+import Head from "next/head";
 
 const { Title, Text } = Typography;
 
@@ -29,6 +30,9 @@ const StorageDevice = ({ product }) => {
 
   return (
     <div>
+      <Head>
+        <title>Storage Device</title>
+      </Head>
       <h1 style={{
           textAlign: "center",
           fontSize: "50px",

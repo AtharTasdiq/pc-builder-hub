@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { addComponent } from "@/redux/cpuReducer";
 import { useRouter } from "next/router";
 import RootLayout from "@/components/Layout/RootLayout";
+import Head from "next/head";
 
 const { Title, Text } = Typography;
 
@@ -29,6 +30,9 @@ const CpuProcessor = ({ product }) => {
 
   return (
     <div>
+      <Head>
+        <title>CPU / Processor</title>
+      </Head>
       <h1 style={{
           textAlign: "center",
           fontSize: "50px",

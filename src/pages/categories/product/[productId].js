@@ -7,6 +7,7 @@ import {
 } from "@ant-design/icons";
 import Image from "next/image";
 import RootLayout from "@/components/Layout/RootLayout";
+import Head from "next/head";
 
 const { Title, Text } = Typography;
 
@@ -18,6 +19,9 @@ const imageStyle = {
 
 const ProductDetailPage = ({ product }) => (
   <div style={{ display: "flex", justifyContent: "center" }}>
+      <Head>
+        <title>{product?.productName}</title>
+      </Head>
     <div style={{ maxWidth: "1200px", width: "100%" }}>
       <Row
         style={{ marginTop: "80px", alignItems: "center" }}
