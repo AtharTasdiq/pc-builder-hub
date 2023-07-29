@@ -1,10 +1,10 @@
 ### Project Name : PC BUILDER HUB ###
 
-Live Website Link : https://pc-builder-app.vercel.app
-Github Repository Link : https://github.com/AtharTasdiq/pc-builder-hub
+1. Live Website Link : https://pc-builder-app.vercel.app
+2. Github Repository Link : https://github.com/AtharTasdiq/pc-builder-hub
 
-Server Link : https://pc-builder-server-nu.vercel.app
-Server Github Repository Link : https://github.com/AtharTasdiq/pc-builder-server
+3. Server Link : https://pc-builder-server-nu.vercel.app
+4. Server Github Repository Link : https://github.com/AtharTasdiq/pc-builder-server
 
 
 ## Description ##
