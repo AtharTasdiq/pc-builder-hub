@@ -13,6 +13,7 @@ In this project I built an application to build a PC by choosing components. To 
 ## Tools/Framework/Library ##
 1. Next.JS
 2. Next-Auth (For Authentication)
-3. Ant Design (For Design of the UI)
-4. Vercel (Deployment)
-5. GitHub (Code Storing)
+3. Redux / Redux Toolkit (For State Management)
+4. Ant Design (For Design of the UI)
+5. Vercel (Deployment)
+6. GitHub (Code Storing)
